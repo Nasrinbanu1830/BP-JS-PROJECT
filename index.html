@@ -26,14 +26,28 @@
         </div>
         <div class="modal-body">
           <div class="mb-3">
-            <label for="tasktitle" class="form-label">Task Title</label>
-            <input type="url" class="form-control" id="tasktitle">
+            <label for="imageurl" class="form-label">Image Url</label>
+            <input type="url" class="form-control" id="imageurl" placeholder="https://images.example.com/example.png"/>
           </div>
+
+          <div class="mb-3">
+            <label for="tasktitle" class="form-label">Task Title</label>
+            <input type="text" class="form-control" id="tasktitle" placeholder=" Web Developing"/>
+          </div>
+          <div class="mb-3">
+            <label for="tasktype" class="form-label">Task Type</label>
+            <input type="text" class="form-control" id="tasktype" placeholder="Development">
+          </div>
+          <div class="mb-3">
+            <label for="taskdescription" class="form-label">Task Description</label>
+            <textarea rows="4" class="form-control" id="taskdescription" placeholder="Building an Amazing Website!"></textarea>
+          </div>
+
         
         </div>
         <div class="modal-footer justify-content-end">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary" onclick="saveChanges()">Save changes</button>
         </div>
       </div>
     </div>
@@ -98,22 +112,14 @@
 
    </section>
   </div>
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- JavaScript Bundle with Popper -->
+   <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!--our js file-->
+<script src="index.js"></script>
+
+
+
+
+
 </body>
 </html>
