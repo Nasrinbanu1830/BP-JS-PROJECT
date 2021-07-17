@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="style.css" />   
 <title>Tasky</title>
 </head>
-<body>
+<body onload="loadInitialTaskCards()">
   <!--modal-->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -47,7 +47,7 @@
         </div>
         <div class="modal-footer justify-content-end">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" onclick="saveChanges()">Save changes</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="saveChanges()">Save changes</button>
         </div>
       </div>
     </div>
@@ -57,7 +57,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
     <div class="container-fluid">
         <h1 class="navbar-brand fw-bold"
-      <a href="#">Tasky</a>
+       <a href="#">Tasky</a>
       </h1>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -89,7 +89,7 @@
 <section>
    <!--card-->
    <div class="row task__container">
-     <div class="col-md-6 col-lg-4">
+    <div class="col-md-6 col-lg-4">
       <div class="card">
         <div class="card-header d-flex justify-content-end gap-2">
           <button type="button" class="btn btn-outline-success"><i class="fas fa-pencil-alt"></i></button>
@@ -108,6 +108,7 @@
         </div>
       </div>
      </div>
+
    </div>
 
    </section>
