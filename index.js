@@ -153,11 +153,18 @@ const saveChanges = () => {
               taskType: updatedData.taskType,
               taskDescription: updatedData.taskDescription,      
               
-            };
+            }
            }
            return task;
          });
           updateLocalStorage();
+
+          taskTitle.setAttribute("contenteditable", "false");
+          taskDescription.setAttribute("contenteditable", "false");
+          taskType.setAttribute("contenteditable","false");
+          submitButton.removeAttribute("onclick");
+          submitButton.innerHTML= "Open Task";
+   
        };
       
 
